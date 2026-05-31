@@ -9,7 +9,7 @@ from pydantic import BaseModel
 from sqlalchemy import Column, String, create_engine, text
 from sqlalchemy.orm import DeclarativeBase, Session
 
-app = FastAPI(title="URL Shortener")
+app = FastAPI(title="My URL Shortener")
 
 DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://user:password@db:5432/urlshortener")
 REDIS_URL = os.getenv("REDIS_URL", "redis://redis:6379")
